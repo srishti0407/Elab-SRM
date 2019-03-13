@@ -1,0 +1,24 @@
+Level 1
+Input & Ouput
+
+Y2K Problem Detector
+Write a program that asks a user for their birth year encoded as two digits (like "62") and for the current year, also encoded as two digits (like "99"). The program is to correctly write out the users age in years.
+
+
+  #include<stdio.h>
+int main(){
+  signed int current, birth, a;
+  scanf("%d",&birth);
+  scanf("%d",&current);  
+  if(current<birth)
+  {
+    birth=100-birth;
+    a=birth+current;
+    printf("Your age is %d",a);
+  }
+  else
+  {
+  printf("Your age is %d",current-birth);
+  }
+  return 0;
+}
