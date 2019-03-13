@@ -1,0 +1,20 @@
+Level 1
+Input & Ouput
+
+Indian Government
+
+In a country named India, the minors and senior citizens are not eligible to vote. Only people aged between 18 to 60 (both inclusive) are eligible to vote. Write a program to determine a person in India is eligible to vote.
+
+
+#include <stdio.h>
+int main()
+{
+  int a;
+  scanf("%d",&a);
+  if(a>=18 && a<=60)
+    printf("Eligible");
+  else
+    printf("Not Eligible");
+
+	return 0;
+}
